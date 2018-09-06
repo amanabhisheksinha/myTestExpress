@@ -4,7 +4,7 @@
 
  var express = require('express');
 let app = express();
-var port = 8000;
+var port = process.env.port || process.env.PORT || 8000;
 
 app.get('/', function(req, res){
     res.json({
